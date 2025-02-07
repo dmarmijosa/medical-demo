@@ -1,4 +1,5 @@
 import { Heart, Stethoscope, Video, CreditCard } from "lucide-react"
+import Link from "next/link"
 
 const services = [
   {
@@ -6,17 +7,20 @@ const services = [
     description:
       "Evaluación integral de su salud, incluyendo historial médico, examen físico y recomendaciones personalizadas.",
     icon: Stethoscope,
+    id: "consulta",
   },
   {
     name: "Cardiología",
     description:
       "Diagnóstico y tratamiento de enfermedades cardiovasculares, incluyendo electrocardiogramas y pruebas de esfuerzo.",
     icon: Heart,
+    id: "especialidad",
   },
   {
     name: "Telemedicina",
     description: "Consultas médicas en línea para mayor comodidad y accesibilidad, manteniendo la calidad de atención.",
     icon: Video,
+    id: "telemedicina",
   },
 ]
 
@@ -36,7 +40,7 @@ export default function Servicios() {
         <div className="mt-20">
           <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
             {services.map((service) => (
-              <div key={service.name} className="relative">
+              <div key={service.name} className="relative" id={service.id}>
                 <dt>
                   <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white">
                     <service.icon className="h-6 w-6" aria-hidden="true" />
@@ -66,9 +70,9 @@ export default function Servicios() {
                 <p>Trabajamos con las principales aseguradoras. Por favor, consulte su cobertura específica.</p>
               </div>
               <div className="mt-3">
-                <a href="#" className="text-sm font-medium text-primary hover:text-primary-dark">
+                <Link href="/seguros-aceptados" className="text-sm font-medium text-primary hover:text-primary-dark">
                   Ver lista completa de seguros aceptados &rarr;
-                </a>
+                </Link>
               </div>
             </div>
           </div>

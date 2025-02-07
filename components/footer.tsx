@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
 
 export function Footer() {
+  const yearAny = new Date().getFullYear();
   return (
     <footer className="bg-gray-800 text-white">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
@@ -111,7 +112,7 @@ export function Footer() {
             </a>
           </div>
           <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-            &copy; 2023 Dr. John Doe. Todos los derechos reservados.
+            &copy; {yearAny} Dr. Pamela Cuenca. Todos los derechos reservados.
           </p>
         </div>
       </div>

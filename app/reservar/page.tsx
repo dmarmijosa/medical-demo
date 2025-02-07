@@ -52,7 +52,7 @@ export default function ReservarCita() {
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Reservar Cita</h2>
           <p className="mt-4 text-lg text-gray-500">
-            Complete el formulario a continuación para programar su cita con el Dr. John Doe.
+            Complete el formulario a continuación para programar su cita con el Dr. Pamela Cuenca.
           </p>
         </div>
         <div className="mt-12 max-w-lg mx-auto">
@@ -159,7 +159,7 @@ export default function ReservarCita() {
             </p>
             <div className="inline-block p-4 bg-white rounded-lg shadow-md">
               <QRCode
-                value={`Cita con Dr. John Doe\nFecha: ${format(formData.date, "dd/MM/yyyy", { locale: es })}\nHora: ${
+                value={`Cita con Dr. Pamela Cuenca\nFecha: ${format(formData.date, "dd/MM/yyyy", { locale: es })}\nHora: ${
                   formData.time
                 }\nTipo: ${formData.type === "presencial" ? "Presencial" : "Virtual"}`}
                 size={200}

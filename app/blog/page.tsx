@@ -54,11 +54,11 @@ export default function Blog() {
                 </div>
                 <div className="mt-6 flex items-center">
                   <div className="flex-shrink-0">
-                    <span className="sr-only">Dr. John Doe</span>
-                    <img className="h-10 w-10 rounded-full" src="/doctor-avatar.jpg" alt="Dr. John Doe" />
+                    <span className="sr-only">Dr. Pamela Cuenca</span>
+                    <img className="h-10 w-10 rounded-full" src="https://plus.unsplash.com/premium_photo-1661764354954-f2d74a4738cf?q=80&w=3435&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dr. Pamela Cuenca" />
                   </div>
                   <div className="ml-3">
-                    <p className="text-sm font-medium text-gray-900">Dr. John Doe</p>
+                    <p className="text-sm font-medium text-gray-900">Dr. Pamela Cuenca</p>
                     <div className="flex space-x-1 text-sm text-gray-500">
                       <time dateTime={post.date}>{post.date}</time>
                       <span aria-hidden="true">&middot;</span>

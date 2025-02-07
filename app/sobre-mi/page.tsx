@@ -6,9 +6,9 @@ export default function SobreMi() {
       <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8">
           <div>
-            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Sobre Dr. John Doe</h2>
+            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Sobre Dr. Pamela Cuenca</h2>
             <p className="mt-3 max-w-3xl text-lg text-gray-500">
-              Con más de 15 años de experiencia en medicina interna y cardiología, el Dr. John Doe se ha dedicado a
+              Con más de 15 años de experiencia en medicina interna y cardiología, el Dr. Pamela Cuenca se ha dedicado a
               proporcionar atención médica de alta calidad y personalizada a sus pacientes.
             </p>
             <div className="mt-8 space-y-6">
@@ -80,8 +80,8 @@ export default function SobreMi() {
           <div className="mt-12 lg:mt-0">
             <Image
               className="rounded-lg shadow-lg object-cover object-center"
-              src="/doctor-office.jpg"
-              alt="Dr. John Doe en su consultorio"
+              src="https://plus.unsplash.com/premium_photo-1661764354954-f2d74a4738cf?q=80&w=3435&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Dr. Pamela Cuenca en su consultorio"
               width={640}
               height={640}
             />

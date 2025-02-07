@@ -17,13 +17,13 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-10 md:mb-0">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">Dr. John Doe</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">Dr. Pamela Cuenca</h1>
               <p className="text-xl mb-6">Especialista en Medicina Interna y Cardiología</p>
               <p className="mb-8">
                 Comprometido con tu salud y bienestar. Más de 15 años de experiencia brindando atención médica de
                 calidad.
               </p>
-              <Link href="/reservar" passHref>
+              <Link href="/codigo-qr" passHref>
                 <Button size="lg" className="bg-white text-primary hover:bg-gray-100">
                   Reservar Cita
                 </Button>
@@ -32,7 +32,7 @@ export default function Home() {
             <div className="md:w-1/2">
               <Image
                 src="https://plus.unsplash.com/premium_photo-1661766718556-13c2efac1388?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Dr. John Doe"
+                alt="Dr. Pamela Cuenca"
                 width={500}
                 height={500}
                 className="rounded-lg shadow-lg object-cover"
@@ -81,16 +81,16 @@ export default function Home() {
             <div className="md:w-1/2 mb-10 md:mb-0">
               <Image
                 src="https://plus.unsplash.com/premium_photo-1661764354954-f2d74a4738cf?q=80&w=3435&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Dr. John Doe en su consultorio"
+                alt="Dr. Pamela Cuenca en su consultorio"
                 width={500}
                 height={500}
                 className="rounded-lg shadow-lg"
               />
             </div>
             <div className="md:w-1/2 md:pl-10">
-              <h2 className="text-3xl font-bold mb-6">Sobre Dr. John Doe</h2>
+              <h2 className="text-3xl font-bold mb-6">Sobre Dr. Pamela Cuenca</h2>
               <p className="mb-6">
-                Con más de 15 años de experiencia en medicina interna y cardiología, el Dr. John Doe se ha dedicado a
+                Con más de 15 años de experiencia en medicina interna y cardiología, el Dr. Pamela Cuenca se ha dedicado a
                 proporcionar atención médica de alta calidad y personalizada a sus pacientes.
               </p>
               <ul className="list-disc list-inside mb-6">
