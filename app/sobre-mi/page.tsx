@@ -28,7 +28,7 @@ export default function SobreMi() {
                 <div className="ml-4">
                   <h3 className="text-lg leading-6 font-medium text-gray-900">Formación Académica</h3>
                   <p className="mt-2 text-base text-gray-500">
-                    Graduado de la Universidad de Medicina con honores. Especialización en Cardiología en el Hospital
+                    Graduada de la Universidad de Medicina con honores. Especialización en Cardiología en el Hospital
                     Central.
                   </p>
                 </div>
@@ -80,7 +80,7 @@ export default function SobreMi() {
           <div className="mt-12 lg:mt-0">
             <Image
               className="rounded-lg shadow-lg object-cover object-center"
-              src="https://plus.unsplash.com/premium_photo-1661764354954-f2d74a4738cf?q=80&w=3435&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Dr. Pamela Cuenca en su consultorio"
               width={640}
               height={640}

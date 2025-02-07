@@ -31,7 +31,7 @@ export default function Home() {
             </div>
             <div className="md:w-1/2">
               <Image
-                src="https://plus.unsplash.com/premium_photo-1661766718556-13c2efac1388?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Dr. Pamela Cuenca"
                 width={500}
                 height={500}
@@ -80,7 +80,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-10 md:mb-0">
               <Image
-                src="https://plus.unsplash.com/premium_photo-1661764354954-f2d74a4738cf?q=80&w=3435&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Dr. Pamela Cuenca en su consultorio"
                 width={500}
                 height={500}
@@ -94,7 +94,7 @@ export default function Home() {
                 proporcionar atención médica de alta calidad y personalizada a sus pacientes.
               </p>
               <ul className="list-disc list-inside mb-6">
-                <li>Graduado con honores de la Universidad de Medicina</li>
+                <li>Graduada con honores de la Universidad de Medicina</li>
                 <li>Especialización en Cardiología en el Hospital Central</li>
                 <li>Miembro de la Asociación Americana de Cardiología</li>
               </ul>
