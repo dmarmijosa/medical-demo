@@ -1,101 +1,146 @@
-import Image from "next/image";
+import Image from "next/image"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { ChevronRight } from "lucide-react"
+
+// Componentes adicionales
+import { Services } from "@/components/services"
+import { BlogPreview } from "@/components/blog-preview"
+import { ContactSection } from "@/components/contact-section"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex flex-col min-h-screen">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-blue-400 to-blue-600 text-white py-20">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="md:w-1/2 mb-10 md:mb-0">
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">Dr. John Doe</h1>
+              <p className="text-xl mb-6">Especialista en Medicina Interna y Cardiología</p>
+              <p className="mb-8">
+                Comprometido con tu salud y bienestar. Más de 15 años de experiencia brindando atención médica de
+                calidad.
+              </p>
+              <Link href="/reservar" passHref>
+                <Button size="lg" className="bg-white text-primary hover:bg-gray-100">
+                  Reservar Cita
+                </Button>
+              </Link>
+            </div>
+            <div className="md:w-1/2">
+              <Image
+                src="https://plus.unsplash.com/premium_photo-1661766718556-13c2efac1388?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Dr. John Doe"
+                width={500}
+                height={500}
+                className="rounded-lg shadow-lg object-cover"
+              />
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* Servicios Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Nuestros Servicios</h2>
+          <Services />
+          <div className="text-center mt-12">
+            <Link href="/servicios" passHref>
+              <Button variant="outline">
+                Ver todos los servicios
+                <ChevronRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Blog Preview Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Últimos Artículos</h2>
+          <BlogPreview />
+          <div className="text-center mt-12">
+            <Link href="/blog" passHref>
+              <Button variant="outline">
+                Ver todos los artículos
+                <ChevronRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Sobre Mí Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="md:w-1/2 mb-10 md:mb-0">
+              <Image
+                src="https://plus.unsplash.com/premium_photo-1661764354954-f2d74a4738cf?q=80&w=3435&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Dr. John Doe en su consultorio"
+                width={500}
+                height={500}
+                className="rounded-lg shadow-lg"
+              />
+            </div>
+            <div className="md:w-1/2 md:pl-10">
+              <h2 className="text-3xl font-bold mb-6">Sobre Dr. John Doe</h2>
+              <p className="mb-6">
+                Con más de 15 años de experiencia en medicina interna y cardiología, el Dr. John Doe se ha dedicado a
+                proporcionar atención médica de alta calidad y personalizada a sus pacientes.
+              </p>
+              <ul className="list-disc list-inside mb-6">
+                <li>Graduado con honores de la Universidad de Medicina</li>
+                <li>Especialización en Cardiología en el Hospital Central</li>
+                <li>Miembro de la Asociación Americana de Cardiología</li>
+              </ul>
+              <Link href="/sobre-mi" passHref>
+                <Button>
+                  Conocer más
+                  <ChevronRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonios Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Lo que dicen mis pacientes</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>María González</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>
+                  {'"El Dr. Doe es un profesional excepcional. Su atención y dedicación han mejorado significativamente mi calidad de vida."'}
+                </p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Carlos Rodríguez</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>
+                  {'"Gracias al Dr. Doe, pude superar mis problemas cardíacos. Su experiencia y trato humano son incomparables."'}
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <ContactSection />
     </div>
-  );
+  )
 }
+
